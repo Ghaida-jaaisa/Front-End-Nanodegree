@@ -1,0 +1,59 @@
+body {
+    background: rgb(30,217,228);
+    background: radial-gradient(circle, rgba(30,217,228,1) 0%, rgba(249,0,255,1) 100%);
+}
+
+fieldset {
+    border: none;
+}
+
+form {
+    background-color: white;
+    width: fit-content;
+    margin: 100px auto;
+    height: fit-content;
+    padding: 50px 50px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+align-items: center;
+}
+
+form input[type="submit"] {
+    color: white;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 20px;
+    margin: 25px 0;
+    width: 100%;
+    font-weight: 700;
+    background: rgb(30,217,228);
+background: radial-gradient(circle, rgba(30,217,228,1) 0%, rgba(249,0,255,1) 100%);
+}
+
+legend {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin: 20px auto;
+}
+form input[type="text"] , form input[type="password"] {
+    /* background-color: red; */
+    padding: 10px 5px ;
+    border: none;
+    border-bottom: 2px #e4e4e4 solid;
+}
+form label {
+    margin: 0 5px;
+}
+form img {
+    width: 15px;
+}
+@font-face {
+    font-family: Roboto, sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+}
