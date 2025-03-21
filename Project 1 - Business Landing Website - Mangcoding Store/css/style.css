@@ -201,7 +201,6 @@ footer .list .header {
 /*---- media queries ----*/
 @media screen and (max-width: 1011px) {
     .available-courses .container {
-        background-color: red;
         flex-direction: column !important ;
     }
     .available-courses .courses {
