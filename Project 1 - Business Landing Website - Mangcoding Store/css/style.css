@@ -198,17 +198,7 @@ footer .list .header {
     font-weight: 700;
 }
 
-/*---- media queries ----*/
-@media screen and (max-width: 1011px) {
-    .available-courses .container {
-        flex-direction: column !important ;
-    }
-    .available-courses .courses {
-        width: 100% ;
-    }
-
-
-}
+/*---- media queries -------------------------------------------------------------------*/
 
 @media screen and (max-width: 885px) {
     header nav ul {
@@ -229,21 +219,6 @@ footer .list .header {
 @media screen and (max-width: 833px) {
     footer .container {
         flex-wrap: nowrap;
-        width: calc(100% - 20px);
-    }
-}
-
-@media screen and (max-width: 800px) {
-    
-}
-
-
-@media screen and (max-width: 794px) {
-    .available-courses .container {
-        flex-direction: column;
-        justify-content: center;
-    }
-    .available-courses .container {
         width: calc(100% - 20px);
     }
 }
@@ -279,9 +254,6 @@ footer .list .header {
 
     .auth {
         gap: 10px;
-    }
-    .available-courses .courses {
-        justify-content: center;
     }
 }
 

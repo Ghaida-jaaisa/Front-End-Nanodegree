@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 /* Let's Begin Section  */
 .lets-begin {
@@ -13,7 +18,6 @@
     margin: auto;
     padding: 30px 0;
     align-items: center;
-
 }
 
 .lets-begin .row {
@@ -422,4 +426,32 @@
     gap: 20px;
     color: #969696;
 }
+
+/*---- media queries -------------------------------------------------------------------*/
+@media screen and (max-width: 1011px) {
+    .available-courses .container {
+        flex-direction: column !important ;
+    }
+    .available-courses .courses {
+        width: 100% ;
+    }
+
+}
+
+@media screen and (max-width: 794px) {
+    .available-courses .container {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .available-courses .container {
+        width: calc(100% - 20px);
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .available-courses .courses {
+        justify-content: center;
+    }
+}
+
 
