@@ -1,14 +1,18 @@
 body {
-    background: rgb(30,217,228);
-    background: radial-gradient(circle, rgba(30,217,228,1) 0%, rgba(249,0,255,1) 100%);
+    /* background: rgb(30,217,228); */
+    /* background: radial-gradient(circle, rgba(30,217,228,1) 0%, rgba(249,0,255,1) 100%); */
+background-color: #e4e4e4;
 }
 
 fieldset {
-    border: none;
+    display: flex;
+    gap: 50px;
+    text-align: center;
+    padding: 50px 50px;
+    background-color: #fff;
 }
 
 form {
-    background-color: white;
     width: fit-content;
     margin: 100px auto;
     height: fit-content;
@@ -37,6 +41,7 @@ legend {
     font-weight: 700;
     font-size: 1.5rem;
     margin: 20px auto;
+    padding: 20px;
 }
 form input[type="text"] , form input[type="password"] {
     /* background-color: red; */
@@ -50,10 +55,30 @@ form label {
 form img {
     width: 15px;
 }
-@font-face {
+
+figure {
+    padding: 4px;
+    width: fit-content;
+  }
+figcaption {
+    color: #000;
+    font-weight: 700;
+    margin: 10px 0;
+}
+ .login-form {
+    border: 1px solid #e4e4e4;
+
+ } 
+.login-form figure img {
+    width: 100%;
+    height: 150px;
+}
+/* @font-face {
     font-family: Roboto, sans-serif;
     src: url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
     font-optical-sizing: auto;
     font-style: normal;
     font-variation-settings:"wdth" 100;
-}
+} */
+
+

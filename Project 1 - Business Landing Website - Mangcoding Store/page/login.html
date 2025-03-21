@@ -1,27 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="icon" href="../images/login.svg">
-    <link rel="stylesheet" href="../css/login.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="icon" href="../images/login.svg">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/login.css">
 
 </head>
+
 <body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="../images/LOGO/logo.svg" alt="logo">
+        <p>Mangcoding Store</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Course</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Article </a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
 
-    <form action="" method="post">
-        <fieldset>
-          <legend><strong>Login</strong></legend>
-          <img src="../images/user-solid.svg" alt="user-solid">
-          <label for="username">Username</label> <br>
-          <input type="text" name="username" id="username" placeholder="Type your username"> <br><br>
-          <img src="../images/key-solid.svg" alt="key-solid">
-          <label for="password">Password</label> <br>
-          <input type="password" name="password" id="password" placeholder="Type your password"> <br><br>
-          <input type="submit" value="LOGIN">
-        </fieldset>
-      </form>
 
+
+      <div class="auth">
+        <a href="../page/login.html" class="login">Login</a>
+        <a href="#" class="register">Register</a>
+      </div>
+      <div id="bars">
+        <img src="../images/bars-solid.svg" alt="bars-solid">
+      </div>
+    </div>
+
+  </header>
+<section class="login-form">
+  <form action="" method="post">
+    <fieldset>
+      <legend><strong>Login</strong></legend>
+      <figure>
+        <img src="../images/LOGO/logo.svg" alt="logo">
+        <figcaption>Mangcoding Store</figcaption>
+      </figure>
+
+   <div>
+    <img src="../images/user-solid.svg" alt="user-solid">
+    <label for="username">Username</label> <br>
+    <input type="text" name="username" id="username" placeholder="Type your username"> <br><br>
+    <img src="../images/key-solid.svg" alt="key-solid">
+    <label for="password">Password</label> <br>
+    <input type="password" name="password" id="password" placeholder="Type your password"> <br><br>
+    <input type="submit" value="LOGIN">
+   </div>
+    </fieldset>
+  </form>
+
+</section>
+
+  <footer>
+    <div class="container">
+      <div class="social-media">
+        <div class="logo">
+          <img src="../images/LOGO/logo.svg" alt="Logo">
+          <p>Mangcoding Store</p>
+        </div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quas ipsam quia aspernatur harum
+          numquam repellat explicabo. Libero, nulla voluptatem!</p>
+        <div class="social-logo">
+          <img src="../images/LOGO/facbook-logo.svg" alt="facebook-logo">
+          <img src="../images/LOGO/twitter.svg" alt="twitter-logo">
+          <img src="../images/LOGO/linkedin.svg" alt="linkedin-logo">
+          <img src="../images//LOGO/instagram.svg" alt="instagram-logo">
+        </div>
+      </div>
+      <div class="links">
+        <div class="home list">
+          <ul>
+            <li><a href="#" class="header">home</a></li>
+            <li><a href="#">product</a></li>
+            <li><a href="#">course</a></li>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">log in</a></li>
+          </ul>
+        </div>
+        <div class="course list">
+          <ul>
+            <li><a href="#" class="header">Course</a></li>
+            <li><a href="#">HTML & CSS</a></li>
+            <li><a href="#">Javascript</a></li>
+            <li><a href="#">photographer</a></li>
+            <li><a href="#">design Graphics</a></li>
+          </ul>
+        </div>
+        <div class="article list">
+          <ul>
+            <li><a href="#" class="header">article</a></li>
+            <li><a href="#">New</a></li>
+            <li><a href="#">Old</a></li>
+            <li><a href="#">Trend</a></li>
+            <li><a href="#">Popular</a></li>
+          </ul>
+        </div>
+        <div class="contact-us list">
+          <ul>
+            <li><a href="#" class="header">Contact us</a></li>
+            <li><a href="#">Ghaidajaaysah@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
+
 </html>

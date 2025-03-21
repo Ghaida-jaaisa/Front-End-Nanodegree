@@ -275,7 +275,7 @@
     width: 100%;
     margin: 50px 0;
 }
-
+/*
 .available-courses .container {
     width: calc(100% - 120px);
     margin: auto;
@@ -284,6 +284,19 @@
     flex-direction: row-reverse;
     justify-content: space-between;
     gap: 20px;
+}
+*/
+.available-courses .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: calc(100% - 120px);
+    margin: auto;
+    padding: 25px 0;
+    align-items: center;
+
 }
 
 .available-courses .details {
