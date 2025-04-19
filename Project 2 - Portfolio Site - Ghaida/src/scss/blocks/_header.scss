@@ -1,0 +1,54 @@
+/* styling navbar */
+
+@use '../utils/mixins' as *;
+@use '../utils/variables' as *;
+
+header  .container {
+    @include display-flex-row;
+    justify-content: space-around;
+    background-color: $nav-color;
+    height: 100px;
+    margin-bottom: 100px;
+    width: 100%;
+
+& .logo img {
+    height: 90px;
+}
+
+& nav ul{
+    @include display-flex-row-nav;
+    list-style: none;
+    gap: 50px;
+    padding: 0;
+
+& li {
+    margin: 0 20px;
+    font-family: $primary-font;
+
+    & a {
+        text-decoration: none;
+        color : $text-color;
+
+        &:hover {
+            color: $intro-banner-color;
+            font-size: 1.1rem;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+    }
+}
+}
+}
+
+/*-----------------------------------*/
+@media screen and (max-width: 750px) {
+    header .container nav ul {
+        gap: 0;
+
+       & li {
+        margin: 5px;
+       }
+    }
+    
+}

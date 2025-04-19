@@ -1,0 +1,188 @@
+/* store colors , fonts , sizes */
+/* for media queries */
+/******************************************/
+footer {
+  margin-top: 100px;
+  width: 100%;
+}
+footer .container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  justify-content: space-around;
+  background-color: #131325;
+  color: white;
+}
+footer .container span {
+  font-weight: bold;
+}
+
+/* styling navbar */
+header .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #131325;
+  height: 100px;
+  margin-bottom: 100px;
+  width: 100%;
+}
+header .container .logo img {
+  height: 90px;
+}
+header .container nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  gap: 50px;
+  padding: 0;
+}
+header .container nav ul li {
+  margin: 0 20px;
+  font-family: "Arial", sans-serif;
+}
+header .container nav ul li a {
+  text-decoration: none;
+  color: #EEF1DA;
+}
+header .container nav ul li a:hover {
+  color: #6a88ba;
+  font-size: 1.1rem;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/*-----------------------------------*/
+@media screen and (max-width: 750px) {
+  header .container nav ul {
+    gap: 0;
+  }
+  header .container nav ul li {
+    margin: 5px;
+  }
+}
+.intro-banner {
+  background-color: green;
+}
+.intro-banner .container {
+  width: 100%;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  background-color: #6a88ba;
+  position: relative;
+}
+.intro-banner-image {
+  overflow: hidden;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.intro-banner-image img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.intro-banner-bio {
+  padding: 50px;
+  width: 40%;
+  color: white;
+  font-size: 1rem;
+}
+.intro-banner-bio h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #282634;
+}
+.intro-banner-bio p {
+  margin: 10px 0;
+}
+
+/*---------------*/
+@media screen and (max-width: 750px) {
+  .intro-banner .container {
+    flex-direction: column;
+    height: auto;
+  }
+  .intro-banner .container .intro-banner-bio {
+    width: 100%;
+  }
+}
+.projects {
+  width: 100%;
+  margin: 100px auto;
+}
+.projects .container {
+  width: calc(100% - 20px);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 20px 50px;
+}
+.projects .container h2 {
+  font-size: 2rem;
+  color: #6a2a9d;
+  text-align: center;
+}
+.projects .container .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  gap: 20px;
+}
+.projects .container .cards .card {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 35px;
+  gap: 20px;
+  border-radius: 10px;
+}
+.projects .container .cards .card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.projects .container .cards .card h3 {
+  color: #121a41;
+  margin: 20px;
+}
+.projects .container .cards .card a {
+  text-decoration: none;
+  color: #6a2a9d;
+}
+.projects .container .cards .card a:hover {
+  font-style: italic;
+  font-weight: bold;
+}
+
+/*-------------------*/
+@media screen and (max-width: 768px) {
+  .projects .container .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 570px) {
+  .projects .container .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}/*# sourceMappingURL=blocks.css.map */

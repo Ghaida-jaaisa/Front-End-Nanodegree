@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* for media queries */
+/******************************************/
+/* store colors , fonts , sizes */
+body {
+  background-color: rgb(204, 201, 201);
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #ADB2D4;
+}/*# sourceMappingURL=base.css.map */

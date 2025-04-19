@@ -1,0 +1,22 @@
+/// for body , p , heading */ 
+
+@use './resets';
+@use '../utils/mixins' as *;
+@use '../utils/variables' as *;
+
+
+
+body {
+    background-color: $background-color;
+    text-align: center;
+    font-family: $font-family;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $primary-color;
+}

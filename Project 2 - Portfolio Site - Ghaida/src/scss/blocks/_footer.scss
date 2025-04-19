@@ -1,0 +1,40 @@
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+
+$footer-height: 100px;
+
+footer {
+
+    margin-top: 100px;
+     width: 100%;
+    & .container {
+        width: 100%;
+        @include display-flex-column;
+        height: $footer-height;
+        justify-content: space-around;
+        background-color: $nav-color;
+        color: white;
+
+        & span {
+            font-weight: bold
+        }
+
+        // & .social-media {
+        //     @include display-flex-row;
+        //     list-style: none;
+        //     gap: 20px;
+
+        //     & li {
+        //         margin: 0 20px;
+        //         font-family: $primary-font;
+        //         color: white;
+        //         font-size: 1rem;
+
+        //         & a {
+        //             text-decoration: none;
+        //             color: white;
+        //         }
+        //     }
+        // }
+    }
+}

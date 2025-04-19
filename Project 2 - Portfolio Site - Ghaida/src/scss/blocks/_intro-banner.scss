@@ -1,0 +1,58 @@
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+
+$intro-banner-height: 350px;
+
+.intro-banner {
+  background-color: green;
+
+  .container {
+    width: 100% ;
+    margin: 100px auto;
+    @include display-flex-row;
+    height: $intro-banner-height;
+    background-color: $intro-banner-color ;
+    position: relative;
+  }
+
+  &-image {
+    overflow: hidden;
+    width: 40%;
+    height: 100%;
+    @include display-flex-row;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+
+  &-bio {
+    padding: 50px;
+    width: 40%;
+    color: white;
+    font-size: 1rem;
+
+    h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
+      color: $intro-banner-heading-color;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+  }
+}
+
+/*---------------*/ 
+@media screen and (max-width: 750px) {
+  .intro-banner .container{
+    flex-direction: column;
+    height: auto;
+
+    & .intro-banner-bio {
+      width: 100%;
+    }
+  }
+}
